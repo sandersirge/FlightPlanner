@@ -33,8 +33,8 @@ Istmevaliku lehe arendamisel lõin filtreerimise võimalused, mis võimaldavad v
 - Kõrvuti asuvad kohad
 - Klass (Esimene, Business või Economy)
 
-Kuigi püüdsin luua võimalikult täpse algoritmi, valiti mõnel juhul siiski mitte kõige optimaalsemaid kohti. Probleemi lahenduseks võiks olla täiustatud filtreerimisalgoritm või erinevate filtrite prioriteetide seadmine.
+Kuigi püüdsin luua võimalikult täpse algoritmi, valiti mõnel juhul siiski mitte kõige optimaalsemaid kohti. Probleemi lahenduseks võiks olla täiustatud filtreerimisalgoritm või erinevate filtrite prioriteetide seadmine. Kasutasin siin tehisintellekti abi.
 
-Lõpuks lõin lehekülje salvestatud lennuplaanide kuvamiseks. Lõin funktsionaalsused plaanide vaatamiseks, redigeerimiseks ja kustutamiseks. Kustutamine töötab korralikult, kuid vaatamisel ja redigeerimisel tekib probleeme andmete kuvamisega - osad väljad jäävad tühjaks ja redigeerimisel luuakse alati uus istumisplaan. Probleemi lahenduseks võiks olla andmebaasi suurem kasutuselevõtt, kus planeeringute info oleks kergemini kättesaadav nii vaatamiseks kui ka muutmiseks.
+Lõpuks lõin lehekülje salvestatud lennuplaanide kuvamiseks. Lõin funktsionaalsused plaanide vaatamiseks, redigeerimiseks ja kustutamiseks. Kustutamine töötab korralikult, kuid vaatamisel ja redigeerimisel tekib probleeme andmete kuvamisega - osad väljad jäävad tühjaks ja redigeerimisel luuakse alati uus istumisplaan. Probleemi lahenduseks võiks olla andmebaasi suurem kasutuselevõtt, kus planeeringute info oleks kergemini kättesaadav nii vaatamiseks kui ka muutmiseks. Ka nende implementeerimisel kasutasin tehisintellekti abi.
 
 Projekti lõpetuseks pakkisin rakenduse Dockeri konteinerisse ja laadisin selle ülesse GitHubi koodihoidlasse, lisades sinna ka juhised rakenduse käivitamiseks.
