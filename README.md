@@ -16,7 +16,7 @@ To run the application with Docker:
 ```
 The page should open up on localhost:8080
 
-##Documentation:
+## Documentation: ##
 
 Projekti tegemiseks kulus mul umbes 26 tundi. Tööd alustasin projekti struktuuri loomisega, kasutades frontendis HTML-i, CSS-i ja JavaScripti, samal ajal kui backendis rakendasin Spring Boot’i.
 
