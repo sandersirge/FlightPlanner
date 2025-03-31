@@ -1,3 +1,7 @@
+/**
+ * Selles koodis kasutasin abimeetodite genereerimisel tehisintellekti abi
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
     const flightNumber = params.get('flight');

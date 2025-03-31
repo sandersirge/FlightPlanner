@@ -1,3 +1,7 @@
+/**
+ * Kasutasin abimeetodite genereerimisel ja parandamisel tehisintellekti abi
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     let allFlights = [];
 

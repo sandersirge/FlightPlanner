@@ -3,6 +3,10 @@ package com.cgi.testAssignment.models;
 import lombok.Data;
 import java.util.List;
 
+/**
+ * Selle objektimalli päris lennuandmete kätte saamiseks API-st kasutasin tehisintellekti abi
+ */
+
 @Data
 public class AviationStackResponse {
     private Pagination pagination;

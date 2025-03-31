@@ -1,3 +1,7 @@
+/**
+ * Kasutasin nuppude funktsioonide loomisel tehisintellekti abi
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     const savedFlights = JSON.parse(localStorage.getItem('seatConfigurations')) || [];
     const listElement = document.getElementById('saved-flights');

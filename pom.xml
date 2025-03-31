@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.cgi</groupId>
-	<artifactId>testAssignment</artifactId>
+	<artifactId>testassignment</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>testAssignment</name>
+	<name>testassignment</name>
 	<description>Test assignment for CGI summer internship 2025</description>
 	<url/>
 	<licenses>

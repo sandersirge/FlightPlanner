@@ -41,6 +41,9 @@ public class FlightController {
 
         long range = endDate.getTime() - today.getTime();
 
+        /**
+         * Selle lennuandmete töötlemise koodilõigu lõin tehisintellekti abiga
+         */
         return response.getData().stream()
                 .map(data -> {
                     Flight flight = new Flight();
@@ -103,7 +106,9 @@ public class FlightController {
         seat.setExtraLegroom(row % 4 == 0);
         seat.setNearExit(row > 25);
 
-        // Set seat class based on row number
+        /**
+         * Kasutasin veidi tehisintellekti abi siin, et integreerida istmete klassid nende valikusse
+         */
         if (row <= 5) {
             seat.setSeatClass(SeatClass.FIRST);
         } else if (row <= 10) {
