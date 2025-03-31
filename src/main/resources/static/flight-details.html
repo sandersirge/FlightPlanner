@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lennu detailid</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/planeeringud.css">
+</head>
+<body>
+<nav>
+    <div class="logo">LennuPlaneerija</div>
+    <ul class="nav-links">
+        <li><a href="/index.html">Avaleht</a></li>
+        <li><a href="/planeeringud.html">Minu planeeringud</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="flight-details-container">
+        <h1>Lennu nr <span id="detail-flight-number"></span></h1>
+
+        <div class="flight-info">
+            <p><strong>Väljumisaeg:</strong> <span id="detail-departure"></span></p>
+            <p><strong>Sihtkoht:</strong> <span id="detail-destination"></span></p>
+            <p><strong>Hind:</strong> <span id="detail-price">€</span></p>
+            <p><strong>Kestus:</strong> <span id="detail-duration"></span></p>
+            <p><strong>Valitud kohad:</strong> <span id="detail-seats"></span></p>
+            <p><strong>Reisijate arv:</strong> <span id="detail-passengers"></span></p>
+            <p><strong>Salvestamise aeg:</strong> <span id="detail-saved"></span></p>
+        </div>
+
+        <button onclick="window.history.back()" class="back-btn">Tagasi</button>
+    </div>
+</div>
+
+<script src="/js/flight-details.js"></script>
+</body>
+</html>

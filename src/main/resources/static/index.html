@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Test Assignment</title>
+    <script defer src="/js/script.js"></script>
+</head>
+<body>
+<nav>
+    <div class="logo">LennuPlaneerija</div>
+    <ul class="nav-links">
+        <li><a href="/index.html">Avaleht</a></li>
+        <li><a href="/planeeringud.html">Minu planeeringud</a></li>
+    </ul>
+</nav>
+<div class="main-container">
+    <div class="sidebar">
+        <div class="filter-section">
+            <h3>Hind</h3>
+            <div class="price-range">
+                <input type="range" id="price-slider" min="50" max="300" value="300">
+                <div class="price-values">
+                    <span>50€</span>
+                    <span id="price-value">300€</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-divider"></div>
+
+        <div class="filter-section">
+            <h3>Kestvus</h3>
+            <div class="duration-scroll">
+                <div class="duration-options" id="duration-options">
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-divider"></div>
+
+        <div class="filter-section">
+            <h3>Sihtkoht</h3>
+            <select id="destination-select" multiple>
+            </select>
+        </div>
+
+        <div class="filter-divider"></div>
+
+        <div class="filter-section">
+            <h3>Väljumisaeg</h3>
+            <div class="date-options">
+                <label><input type="radio" name="date-range" value="3" checked> Järgmised 3 päeva</label>
+                <label><input type="radio" name="date-range" value="7"> Järgmised 7 päeva</label>
+                <label><input type="radio" name="date-range" value="14"> Järgmised 14 päeva</label>
+                <label><input type="radio" name="date-range" value="30"> Järgmised 30 päeva</label>
+            </div>
+            <button id="clear-all-filters" class="clear-all-btn">Tühista valik</button>
+        </div>
+
+        <button id="apply-filters">Rakenda filtrid</button>
+    </div>
+
+    <div class="content">
+        <h1>Lennud</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Lennu number</th>
+                    <th>Väljumiskoht</th>
+                    <th>Sihtkoht</th>
+                    <th>Väljumisaeg</th>
+                    <th>Hind €</th>
+                    <th>Kestvus</th>
+                </tr>
+                </thead>
+                <tbody id="flights-table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

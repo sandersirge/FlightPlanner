@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Istekohtade valik</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/seat.css">
+</head>
+<body>
+<nav>
+    <div class="logo">LennuPlaneerija</div>
+    <ul class="nav-links">
+        <li><a href="/index.html">Avaleht</a></li>
+        <li><a href="/planeeringud.html">Minu planeeringud</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="seat-page">
+        <h1 id="flight-header">Lennu <span id="flight-number"></span> istekohad</h1>
+
+        <div class="seat-controls">
+            <div class="filters">
+                <h2>Filtrid</h2>
+                <div class="filter-group">
+                    <label class="filter-option">
+                        <input type="checkbox" id="window-seat">
+                        <span>Akna all</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" id="extra-legroom">
+                        <span>Rohkem jalaruumi</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" id="near-exit">
+                        <span>Väljapääsu lähedal</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox" id="consecutive-seats">
+                        <span>Järjestikused istekohad</span>
+                    </label>
+                    <label>Klass:
+                        <select id="seat-class-filter">
+                            <option value="all">Kõik klassid</option>
+                            <option value="FIRST">Esimene klass</option>
+                            <option value="BUSINESS">Business klass</option>
+                            <option value="ECONOMY">Economy klass</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="passenger-input">
+                    <label>Reisijate arv:
+                        <input type="number" id="passenger-count" min="1" max="10" value="1">
+                    </label>
+                </div>
+                <div class="filter-actions">
+                    <button id="recommend-seats" class="recommend-btn">Soovita istekohad</button>
+                    <button id="clear-selections" class="clear-btn">Tühista valikud</button>
+                </div>
+            </div>
+
+            <div class="seat-legend">
+                <div class="legend-item">
+                    <div class="legend-sample available"></div>
+                    <span>Vaba</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-sample occupied"></div>
+                    <span>Hõivatud</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-sample selected"></div>
+                    <span>Valitud</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-sample recommended"></div>
+                    <span>Soovitatud</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="seat-map-container">
+            <div class="seat-map" id="seat-map"></div>
+        </div>
+        <div class="save-container">
+            <button id="save-configuration" class="save-btn">Salvesta istmete valik</button>
+        </div>
+    </div>
+</div>
+
+<script src="/js/seat.js"></script>
+</body>
+</html>
