@@ -24,7 +24,7 @@ Backendi arendamisel alustasin objektide loomisest ja kontrolleri kirjutamisest.
 
 Frontendis lõin esmalt kõik vajalikud leheküljed ja kujundasin need CSS-i abil. See osa oli suhteliselt lihtne, kuna olen nende tehnoloogiatega juba tuttav. Seejärel lisasin JavaScripti abil dünaamilist funktsionaalsust, kus tehisintellekt aitas mul lahendada mõningaid probleeme.
 
-Lendude andmete kuvamiseks integreerisin AviationStack API, mis võimaldas kuvada reaalseid lennuandmeid. Avalehele implementeerisin filtreerimisfunktsionaalsuse, mis võimaldab lende filtreerida sihtkoha, kuupäeva, väljumisaja, kestvuse ja hinna alusel. Filtreid saab nuppude abil nii rakendada kui tühistada. Kuigi filtreerimise koodi kirjutamine ei olnud kõige keerulisem, aitas tehisintellekt mul alguses tekkinud probleeme lahendada.
+Lendude andmete kuvamiseks integreerisin AviationStack API, mis võimaldas kuvada reaalseid lennuandmeid, kuid osa nendest andmetest, näiteks kuupäev, hind ja kestvus, on asendatud suvaliselt genereeritud andmetega. Avalehele implementeerisin filtreerimisfunktsionaalsuse, mis võimaldab lende filtreerida sihtkoha, väljumisaja, kestvuse ja hinna alusel. Filtreid saab nuppude abil nii rakendada kui tühistada. Kuigi filtreerimise koodi kirjutamine ei olnud kõige keerulisem, aitas tehisintellekt mul alguses tekkinud probleeme lahendada.
 
 Istmevaliku lehe arendamisel lõin filtreerimise võimalused, mis võimaldavad valida istekohad järgmiste parameetrite alusel:
 - Aknaäärsed kohad
